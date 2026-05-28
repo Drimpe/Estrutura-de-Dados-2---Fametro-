@@ -1,0 +1,21 @@
+Respostas Teóricas - Ponteiros em C 
+
+1. Qual das seguintes afirmações sobre ponteiros em C é VERDADEIRA? 
+
+Resposta correta: b) Um ponteiro armazena o endereço de memória de uma variável.
+
+
+2. O que o operador * (asterisco) faz quando usado na frente de uma variável do tipo ponteiro que já foi inicializada? 
+
+Resposta correta: d) Acessa (dereferencia) o valor armazenado no endereço de memória para o qual o ponteiro aponta.
+
+
+3. Para que serve a função malloc() da biblioteca <stdlib.h>?
+
+Resposta correta: c) Para alocar um bloco de memória de um tamanho especificado em bytes e retornar um ponteiro para o início desse bloco.  
+
+
+4. Considere a função void modifica (int *a, int b) que altera o valor da variável para a qual a aponta. Como seria a chamada correta desta função na main para modificar uma variável int num = 5;? 
+
+Resposta correta: A chamada correta deve passar o endereço da variável `num` usando o operador `&` para o ponteiro `a`, e um valor inteiro qualquer para a variável `b` (já que ela é uma passagem comum por valor). O formato correto da linha de código é:
+  `modifica(&num, valor_de_b);`
